@@ -1,0 +1,76 @@
+2018-04-12 22:29:02 INFO  Server:20 - starting server on: localhost at port 9876
+2018-04-12 22:29:10 INFO  Server:43 - Client connected!
+2018-04-12 22:29:15 INFO  Server:43 - Client connected!
+2018-04-12 22:29:19 INFO  Server:43 - Client connected!
+2018-04-12 22:29:24 INFO  Server:43 - Client connected!
+2018-04-12 22:29:24 INFO  GameController:347 - Player1 has been created
+2018-04-12 22:29:24 INFO  GameController:347 - Player2 has been created
+2018-04-12 22:29:24 INFO  GameController:347 - Player3 has been created
+2018-04-12 22:29:24 INFO  GameController:347 - Player4 has been created
+2018-04-12 22:29:24 INFO  GameController:73 - Initializing a game for scenario 3
+2018-04-12 22:29:24 INFO  GameController:125 - Player1's hand: Test of the Questing Beast,Thieves,Robber Knight,Saxon Knight,Sword,Giant,Lance,Lance,Saxons,Boar,Sword,Dagger,
+2018-04-12 22:29:24 INFO  GameController:125 - Player2's hand: Test of the Questing Beast,Battle-ax,Sword,Horse,Horse,Sir Galahad,Evil Knight,Robber Knight,King Arthur,Sir Tristan,Evil Knight,Test of Valor,
+2018-04-12 22:29:24 INFO  GameController:125 - Player3's hand: Dagger,Evil Knight,Evil Knight,Thieves,Thieves,Excalibur,Black Knight,Saxons,Battle-ax,Horse,Excalibur,Amour,
+2018-04-12 22:29:24 INFO  GameController:125 - Player4's hand: King Pellinore,Sword,Saxon Knight,Battle-ax,Lance,Thieves,Thieves,Saxons,Sword,Saxons,Battle-ax,Lance,
+2018-04-12 22:29:24 INFO  GameController:159 - Player1's turn
+2018-04-12 22:29:28 INFO  GameController:185 - Slay the Dragon quest started!
+2018-04-12 22:29:29 INFO  QuestController:147 - Player1 declined to sponsor
+2018-04-12 22:29:32 INFO  QuestController:142 - Player2 accepted to sponsor
+2018-04-12 22:29:41 INFO  QuestController:224 - Sponsor played for Stage 1: Test of Valor,
+2018-04-12 22:29:55 INFO  QuestController:541 - Stage -- Test of Valor : 0 battlepoints
+2018-04-12 22:29:55 INFO  QuestController:541 - Stage -- Robber Knight : 15 battlepoints
+2018-04-12 22:29:55 INFO  QuestController:224 - Sponsor played for Stage 2: Robber Knight,
+2018-04-12 22:29:58 INFO  QuestController:541 - Stage -- Robber Knight : 15 battlepoints
+2018-04-12 22:29:58 INFO  QuestController:541 - Stage -- Evil Knight : 20 battlepoints
+2018-04-12 22:29:58 INFO  QuestController:224 - Sponsor played for Stage 3: Evil Knight,
+2018-04-12 22:30:03 INFO  QuestController:259 - Player3 is participating
+2018-04-12 22:30:05 INFO  QuestController:259 - Player4 is participating
+2018-04-12 22:30:07 INFO  QuestController:259 - Player1 is participating
+2018-04-12 22:30:07 INFO  QuestController:723 - Player1 receives a card for participating
+2018-04-12 22:30:07 INFO  HandController:46 - Player1 drew Test of Morgan Le Fey
+2018-04-12 22:30:07 INFO  GameController:60 - Player1 has 1 cards too many
+2018-04-12 22:30:10 INFO  GameController:129 - Player1 discard Test of Morgan Le Fey
+2018-04-12 22:30:10 INFO  QuestController:723 - Player3 receives a card for participating
+2018-04-12 22:30:10 INFO  HandController:46 - Player3 drew Sword
+2018-04-12 22:30:10 INFO  GameController:60 - Player3 has 1 cards too many
+2018-04-12 22:30:17 INFO  GameController:129 - Player3 discard Saxons
+2018-04-12 22:30:17 INFO  QuestController:723 - Player4 receives a card for participating
+2018-04-12 22:30:17 INFO  HandController:46 - Player4 drew Amour
+2018-04-12 22:30:17 INFO  GameController:60 - Player4 has 1 cards too many
+2018-04-12 22:30:23 INFO  GameController:129 - Player4 discard Saxons
+2018-04-12 22:30:23 INFO  QuestController:60 - Stage 1
+2018-04-12 22:30:23 INFO  QuestController:276 - Test of Valor played
+2018-04-12 22:30:30 INFO  QuestController:314 - Player3 bid 3 bids
+2018-04-12 22:30:32 INFO  QuestController:320 - Player3 bid above the minimum(2)
+2018-04-12 22:30:38 INFO  QuestController:314 - Player4 bid 4 bids
+2018-04-12 22:30:40 INFO  QuestController:320 - Player4 bid above the minimum(3)
+2018-04-12 22:30:46 INFO  QuestController:314 - Player1 bid 5 bids
+2018-04-12 22:30:48 INFO  QuestController:320 - Player1 bid above the minimum(4)
+2018-04-12 22:30:53 INFO  QuestController:314 - Player3 bid 6 bids
+2018-04-12 22:30:55 INFO  QuestController:320 - Player3 bid above the minimum(5)
+2018-04-12 22:31:00 INFO  QuestController:314 - Player4 bid 3 bids
+2018-04-12 22:31:02 INFO  QuestController:336 - Player4 bid below the minimum(6)
+2018-04-12 22:31:08 INFO  QuestController:314 - Player1 bid 4 bids
+2018-04-12 22:31:10 INFO  QuestController:336 - Player1 bid below the minimum(6)
+2018-04-12 22:31:11 INFO  QuestController:431 - Player3 has won. Please discard 6 cards.
+2018-04-12 22:31:21 INFO  QuestController:467 - Player3 discarded: Sword,Excalibur,Horse,Battle-ax,Excalibur,Dagger,
+2018-04-12 22:31:21 INFO  QuestController:60 - Stage 2
+2018-04-12 22:31:21 INFO  QuestController:541 - Stage -- Robber Knight : 15 battlepoints
+2018-04-12 22:31:35 INFO  QuestController:401 - Player3 played against Stage 2: 
+2018-04-12 22:31:37 INFO  QuestController:561 - Player3 -- rank : 5 battlepoints
+2018-04-12 22:31:37 INFO  QuestController:492 - Player3 played a total off 5 battlepoints against a stage with 15 battlepoints
+2018-04-12 22:31:37 INFO  QuestController:516 - Player3 lost this stage
+2018-04-12 22:31:38 INFO  QuestController:524 - All players are out. There are no winners
+2018-04-12 22:31:38 INFO  QuestController:60 - Stage 3
+2018-04-12 22:31:38 INFO  QuestController:541 - Stage -- Evil Knight : 20 battlepoints
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Test of Morgan Le Fey
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Green Knight
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Sword
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Dagger
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Merlin
+2018-04-12 22:31:40 INFO  HandController:46 - Player2 drew Green Knight
+2018-04-12 22:31:40 INFO  GameController:60 - Player2 has 3 cards too many
+2018-04-12 22:31:53 INFO  GameController:129 - Player2 discard Green Knight
+2018-04-12 22:31:53 INFO  GameController:129 - Player2 discard Merlin
+2018-04-12 22:31:53 INFO  GameController:129 - Player2 discard Dagger
+2018-04-12 22:32:17 INFO  GameController:159 - Player2's turn

@@ -1,0 +1,25 @@
+2018-04-12 18:38:09 INFO  GameController:228 - At Tintagel tournament started!
+2018-04-12 18:38:13 INFO  TournamentController:130 - Player1 is participating
+2018-04-12 18:38:17 INFO  TournamentController:130 - Player2 is participating
+2018-04-12 18:38:20 INFO  TournamentController:134 - Player3 is not participating
+2018-04-12 18:38:23 INFO  TournamentController:130 - Player4 is participating
+2018-04-12 18:38:25 INFO  TournamentController:302 - Player1 receives a card for participating
+2018-04-12 18:38:25 INFO  HandController:46 - Player1 drew Green Knight
+2018-04-12 18:38:25 INFO  GameController:60 - Player1 has 1 cards too many
+2018-04-12 18:38:44 INFO  GameController:129 - Player1 discard Green Knight
+2018-04-12 18:38:44 INFO  TournamentController:302 - Player2 receives a card for participating
+2018-04-12 18:38:44 INFO  HandController:46 - Player2 drew Horse
+2018-04-12 18:38:44 INFO  GameController:60 - Player2 has 1 cards too many
+2018-04-12 18:38:48 INFO  GameController:129 - Player2 discard Horse
+2018-04-12 18:38:48 INFO  TournamentController:302 - Player4 receives a card for participating
+2018-04-12 18:38:48 INFO  HandController:46 - Player4 drew Sword
+2018-04-12 18:38:48 INFO  GameController:60 - Player4 has 1 cards too many
+2018-04-12 18:38:52 INFO  GameController:129 - Player4 discard Sword
+2018-04-12 18:40:39 INFO  TournamentController:200 - Player1 played Sword,Dagger,
+2018-04-12 18:40:44 INFO  TournamentController:200 - Player2 played Sword,
+2018-04-12 18:40:48 INFO  TournamentController:200 - Player3 played 
+2018-04-12 18:40:48 INFO  TournamentController:228 - Player1 total points played : 20
+2018-04-12 18:40:48 INFO  TournamentController:228 - Player2 total points played : 15
+2018-04-12 18:40:48 INFO  TournamentController:228 - Player4 total points played : 5
+2018-04-12 18:40:48 INFO  TournamentController:84 - Player1,  won the tournament
+2018-04-12 18:41:06 INFO  GameController:159 - Player2's turn

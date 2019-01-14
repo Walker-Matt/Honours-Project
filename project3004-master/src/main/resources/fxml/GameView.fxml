@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="board" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-image: url('game.jpg');" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.softwareeng.project.client.views.GameView">
+    <bottom>
+        <HBox fx:id="bottomPlayer" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" BorderPane.alignment="BOTTOM_CENTER">
+            <BorderPane.margin>
+                <Insets top="30.0" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+    <center>
+        <BorderPane fx:id="boardCenter" minHeight="0.0" minWidth="0.0">
+            <bottom>
+                <HBox fx:id="bottomPlayerAssets" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" BorderPane.alignment="BOTTOM_CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </bottom>
+            <center>
+                <BorderPane fx:id="playAreas" minHeight="0.0" minWidth="0.0">
+                    <bottom>
+                        <HBox fx:id="bottomPlayerPlayArea" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" BorderPane.alignment="BOTTOM_CENTER">
+                            <BorderPane.margin>
+                                <Insets bottom="30.0" />
+
+                            </BorderPane.margin>
+                        </HBox>
+                    </bottom>
+                    <left>
+                        <VBox fx:id="leftPlayerPlayArea" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" BorderPane.alignment="CENTER_LEFT">
+                            <BorderPane.margin>
+                                <Insets left="30.0" />
+                            </BorderPane.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                        </VBox>
+                    </left>
+                    <right>
+                        <VBox fx:id="rightPlayerPlayArea" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" BorderPane.alignment="CENTER_RIGHT">
+                            <BorderPane.margin>
+                                <Insets right="30.0" />
+                            </BorderPane.margin>
+                        </VBox>
+                    </right>
+                    <top>
+                        <HBox fx:id="topPlayerPlayArea" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" BorderPane.alignment="TOP_CENTER">
+                            <BorderPane.margin>
+                                <Insets top="30.0" />
+                            </BorderPane.margin>
+                        </HBox>
+                    </top>
+                    <center>
+                        <HBox fx:id="decksArea" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="messageBox" alignment="CENTER" prefWidth="300.0" />
+                     </children></HBox>
+                    </center>
+                </BorderPane>
+            </center>
+            <left>
+                <VBox fx:id="leftPlayerAssets" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" spacing="5.0" BorderPane.alignment="CENTER_LEFT">
+                    <BorderPane.margin>
+                        <Insets left="20.0" />
+                    </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets right="20.0" top="20.0" />
+               </opaqueInsets>
+                </VBox>
+            </left>
+            <right>
+                <VBox fx:id="rightPlayerAssets" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" spacing="5.0" BorderPane.alignment="CENTER_RIGHT">
+                    <BorderPane.margin>
+                        <Insets right="20.0" />
+                    </BorderPane.margin>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </VBox>
+            </right>
+            <top>
+                <HBox fx:id="topPlayerAssets" alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" spacing="5.0" BorderPane.alignment="TOP_CENTER">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="30.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </top>
+        </BorderPane>
+    </center>
+    <left>
+        <VBox fx:id="leftPlayer" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" spacing="5.0" BorderPane.alignment="CENTER_LEFT">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <right>
+        <VBox fx:id="rightPlayer" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefWidth="120.0" BorderPane.alignment="CENTER_RIGHT">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+    <top>
+        <HBox fx:id="topPlayer" alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="120.0" spacing="5.0" BorderPane.alignment="TOP_CENTER">
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+</BorderPane>

@@ -1,0 +1,12 @@
+2018-04-12 16:43:55 INFO  Server:24 - starting server on: 192.168.2.233 at port 9876
+2018-04-12 16:44:17 INFO  Server:41 - Client connected!
+2018-04-12 16:44:29 INFO  Server:41 - Client connected!
+2018-04-12 16:44:29 INFO  GameController:347 - Player1 has been created
+2018-04-12 16:44:29 INFO  GameController:347 - Player2 has been created
+2018-04-12 16:44:29 INFO  GameController:363 - AIPlayer3 has been created
+2018-04-12 16:44:29 INFO  GameController:363 - AIPlayer4 has been created
+2018-04-12 16:44:29 INFO  GameController:61 - Initializing a game for scenario 1
+2018-04-12 16:44:29 INFO  GameController:125 - Player1's hand: Lance,Sword,Boar,Amour,Sword,Sword,Sword,Lance,Saxons,Boar,Sword,Dagger,
+2018-04-12 16:44:29 INFO  GameController:125 - Player2's hand: Amour,Battle-ax,Horse,Test of the Questing Beast,Amour,Sword,Sword,Queen Iseult,Saxons,Sword,Green Knight,Test of Valor,
+2018-04-12 16:44:29 INFO  GameController:125 - AIPlayer3's hand: Evil Knight,Battle-ax,Mordred,Mordred,Horse,Boar,King Arthur,Horse,Battle-ax,Lance,Horse,Excalibur,
+2018-04-12 16:44:29 INFO  GameController:125 - AIPlayer4's hand: Test of Morgan Le Fey,Saxon Knight,Robber Knight,Saxon Knight,Sir Gawain,Green Knight,Battle-ax,Saxon Knight,Sword,Thieves,Battle-ax,Lance,

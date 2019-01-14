@@ -1,0 +1,34 @@
+Installation process:
+
+The project3004-master zip file is our downloaded repository from github as of Friday morning 5:00 am
+
+Project usage:
+Extract the project3004-master.zip file
+
+Open the project in a desired IDE (Intellij IDEA or Eclipse)
+
+Once you have our projected imported into your IDE as a maven project
+
+you'll find 2 packages under src/main/java/com/softwareeng/project/
+
+1. client
+
+2. server
+
+to run our project
+
+first start the server
+
+you may do so by running ServerMain from server package (you may enter the ip and port as commandline arguments, if not the server runs on local host port 9876 by default)
+
+once server is running
+
+run a client by running ClientMain from client package
+
+Enter server's ip and port
+
+first client gets to choose the game settings
+
+other clients may join the game after player1 chooses his/her prefered settings
+
+Have fun :)

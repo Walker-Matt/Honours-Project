@@ -1,0 +1,9 @@
+ **/.idea/*
+  /*.iml
+ -/target/*
+/bin/
+.idea/
+target/
+project3004.iml
+questgame.iml
+nbactions.xml

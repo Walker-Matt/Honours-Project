@@ -1,0 +1,107 @@
+2018-04-12 17:01:03 INFO  Server:20 - starting server on: 192.168.2.233 at port 9876
+2018-04-12 17:01:26 INFO  Server:41 - Client connected!
+2018-04-12 17:01:34 INFO  Server:41 - Client connected!
+2018-04-12 17:01:41 INFO  Server:41 - Client connected!
+2018-04-12 17:01:49 INFO  Server:41 - Client connected!
+2018-04-12 17:01:49 INFO  GameController:347 - Player1 has been created
+2018-04-12 17:01:49 INFO  GameController:347 - Player2 has been created
+2018-04-12 17:01:49 INFO  GameController:347 - Player3 has been created
+2018-04-12 17:01:49 INFO  GameController:347 - Player4 has been created
+2018-04-12 17:01:49 INFO  GameController:61 - Initializing a game for scenario 1
+2018-04-12 17:01:49 INFO  GameController:125 - Player1's hand: Sword,Battle-ax,Saxons,Dagger,Lance,Saxon Knight,Saxons,Queen Iseult,Saxons,Boar,Sword,Dagger,
+2018-04-12 17:01:49 INFO  GameController:125 - Player2's hand: Test of the Questing Beast,Horse,Horse,Horse,Horse,Sword,Test of the Questing Beast,Amour,Sword,Sword,Horse,Mordred,
+2018-04-12 17:01:49 INFO  GameController:125 - Player3's hand: Sword,Queen Guinevere,Giant,Saxon Knight,Test of Temptation,Horse,Sword,Sword,Battle-ax,Excalibur,Horse,Excalibur,
+2018-04-12 17:01:49 INFO  GameController:125 - Player4's hand: Sword,Test of Morgan Le Fey,Thieves,Mordred,Thieves,Saxon Knight,Saxon Knight,Test of Valor,Saxon Knight,Thieves,Battle-ax,Lance,
+2018-04-12 17:01:49 INFO  GameController:159 - Player1's turn
+2018-04-12 17:02:23 INFO  GameController:185 - Boar Hunt quest started!
+2018-04-12 17:02:28 INFO  QuestController:142 - Player1 accepted to sponsor
+2018-04-12 17:05:11 INFO  QuestController:224 - Sponsor played for Stage 1: Saxons,
+2018-04-12 17:05:14 INFO  QuestController:538 - Stage -- Saxons : 10 battlepoints
+2018-04-12 17:05:14 INFO  QuestController:538 - Stage -- Saxon Knight : 15 battlepoints
+2018-04-12 17:05:14 INFO  QuestController:224 - Sponsor played for Stage 2: Saxon Knight,
+2018-04-12 17:05:17 INFO  QuestController:259 - Player2 is participating
+2018-04-12 17:05:28 INFO  QuestController:259 - Player3 is participating
+2018-04-12 17:05:30 INFO  QuestController:259 - Player4 is participating
+2018-04-12 17:05:30 INFO  QuestController:720 - Player2 receives a card for participating
+2018-04-12 17:05:30 INFO  HandController:46 - Player2 drew Black Knight
+2018-04-12 17:05:30 INFO  GameController:60 - Player2 has 1 cards too many
+2018-04-12 17:05:34 INFO  GameController:129 - Player2 discard Black Knight
+2018-04-12 17:05:34 INFO  QuestController:720 - Player3 receives a card for participating
+2018-04-12 17:05:34 INFO  HandController:46 - Player3 drew Sword
+2018-04-12 17:05:34 INFO  GameController:60 - Player3 has 1 cards too many
+2018-04-12 17:05:38 INFO  GameController:129 - Player3 discard Sword
+2018-04-12 17:05:38 INFO  QuestController:720 - Player4 receives a card for participating
+2018-04-12 17:05:38 INFO  HandController:46 - Player4 drew Amour
+2018-04-12 17:05:38 INFO  GameController:60 - Player4 has 1 cards too many
+2018-04-12 17:05:42 INFO  GameController:129 - Player4 discard Amour
+2018-04-12 17:05:42 INFO  QuestController:60 - Stage 1
+2018-04-12 17:05:42 INFO  QuestController:538 - Stage -- Saxons : 10 battlepoints
+2018-04-12 17:05:49 INFO  QuestController:401 - Player2 played against Stage 1: 
+2018-04-12 17:06:00 INFO  QuestController:401 - Player3 played against Stage 1: Sword,
+2018-04-12 17:06:17 INFO  QuestController:401 - Player4 played against Stage 1: Lance,
+2018-04-12 17:06:19 INFO  QuestController:558 - Player2 -- rank : 5 battlepoints
+2018-04-12 17:06:19 INFO  QuestController:489 - Player2 played a total off 5 battlepoints against a stage with 10 battlepoints
+2018-04-12 17:06:19 INFO  QuestController:513 - Player2 lost this stage
+2018-04-12 17:06:20 INFO  QuestController:554 - Player3 -- Sword : 10 battlepoints
+2018-04-12 17:06:20 INFO  QuestController:558 - Player3 -- rank : 5 battlepoints
+2018-04-12 17:06:20 INFO  QuestController:489 - Player3 played a total off 15 battlepoints against a stage with 10 battlepoints
+2018-04-12 17:06:20 INFO  QuestController:496 - Player3 beat this stage
+2018-04-12 17:06:22 INFO  HandController:46 - Player3 drew Merlin
+2018-04-12 17:06:22 INFO  QuestController:554 - Player4 -- Lance : 20 battlepoints
+2018-04-12 17:06:22 INFO  QuestController:558 - Player4 -- rank : 5 battlepoints
+2018-04-12 17:06:22 INFO  QuestController:489 - Player4 played a total off 25 battlepoints against a stage with 10 battlepoints
+2018-04-12 17:06:22 INFO  QuestController:496 - Player4 beat this stage
+2018-04-12 17:06:24 INFO  HandController:46 - Player4 drew Saxon Knight
+2018-04-12 17:06:24 INFO  QuestController:60 - Stage 2
+2018-04-12 17:06:24 INFO  QuestController:538 - Stage -- Saxon Knight : 15 battlepoints
+2018-04-12 17:07:21 INFO  QuestController:401 - Player3 played against Stage 2: Excalibur,
+2018-04-12 17:07:24 INFO  QuestController:401 - Player4 played against Stage 2: 
+2018-04-12 17:07:26 INFO  QuestController:554 - Player3 -- Excalibur : 30 battlepoints
+2018-04-12 17:07:26 INFO  QuestController:558 - Player3 -- rank : 5 battlepoints
+2018-04-12 17:07:26 INFO  QuestController:489 - Player3 played a total off 35 battlepoints against a stage with 15 battlepoints
+2018-04-12 17:07:26 INFO  QuestController:496 - Player3 beat this stage
+2018-04-12 17:07:28 INFO  HandController:46 - Player3 drew Test of Morgan Le Fey
+2018-04-12 17:07:28 INFO  QuestController:558 - Player4 -- rank : 5 battlepoints
+2018-04-12 17:07:28 INFO  QuestController:489 - Player4 played a total off 5 battlepoints against a stage with 15 battlepoints
+2018-04-12 17:07:28 INFO  QuestController:513 - Player4 lost this stage
+2018-04-12 17:07:29 INFO  HandController:46 - Player1 drew Robber Knight
+2018-04-12 17:07:29 INFO  HandController:46 - Player1 drew Green Knight
+2018-04-12 17:07:29 INFO  HandController:46 - Player1 drew Sir Percival
+2018-04-12 17:07:29 INFO  HandController:46 - Player1 drew Evil Knight
+2018-04-12 17:07:29 INFO  GameController:60 - Player1 has 2 cards too many
+2018-04-12 17:07:39 INFO  GameController:129 - Player1 discard Sir Percival
+2018-04-12 17:07:39 INFO  GameController:129 - Player1 discard Evil Knight
+2018-04-12 17:07:39 INFO  QuestController:100 - Player3,  won this quest
+2018-04-12 17:07:40 INFO  GameController:207 - Player3 awarded 2 shields
+2018-04-12 17:07:47 INFO  GameController:159 - Player2's turn
+2018-04-12 17:07:53 INFO  GameController:256 - Prosperity Throughout the Realm event started!
+2018-04-12 17:07:53 INFO  EventController:269 - All players drew 2 cards
+2018-04-12 17:07:54 INFO  HandController:46 - Player1 drew Sword
+2018-04-12 17:07:54 INFO  HandController:46 - Player1 drew Saxon Knight
+2018-04-12 17:07:54 INFO  GameController:60 - Player1 has 2 cards too many
+2018-04-12 17:08:25 INFO  GameController:129 - Player1 discard Sword
+2018-04-12 17:08:25 INFO  GameController:129 - Player1 discard Saxon Knight
+2018-04-12 17:08:25 INFO  EventController:269 - All players drew 2 cards
+2018-04-12 17:08:26 INFO  HandController:46 - Player2 drew Horse
+2018-04-12 17:08:26 INFO  HandController:46 - Player2 drew Sir Tristan
+2018-04-12 17:08:26 INFO  GameController:60 - Player2 has 2 cards too many
+2018-04-12 17:08:31 INFO  GameController:129 - Player2 discard Horse
+2018-04-12 17:08:31 INFO  GameController:129 - Player2 discard Sir Tristan
+2018-04-12 17:08:31 INFO  EventController:269 - All players drew 2 cards
+2018-04-12 17:08:32 INFO  HandController:46 - Player3 drew Robber Knight
+2018-04-12 17:08:32 INFO  HandController:46 - Player3 drew Dagger
+2018-04-12 17:08:32 INFO  GameController:60 - Player3 has 2 cards too many
+2018-04-12 17:08:36 INFO  GameController:129 - Player3 discard Robber Knight
+2018-04-12 17:08:36 INFO  GameController:129 - Player3 discard Dagger
+2018-04-12 17:08:36 INFO  EventController:269 - All players drew 2 cards
+2018-04-12 17:08:37 INFO  HandController:46 - Player4 drew Evil Knight
+2018-04-12 17:08:37 INFO  HandController:46 - Player4 drew Amour
+2018-04-12 17:08:37 INFO  GameController:60 - Player4 has 2 cards too many
+2018-04-12 17:08:41 INFO  GameController:129 - Player4 discard Amour
+2018-04-12 17:08:41 INFO  GameController:129 - Player4 discard Evil Knight
+2018-04-12 17:08:44 INFO  GameController:159 - Player3's turn
+2018-04-12 17:08:47 INFO  GameController:256 - Chivalrous Deed event started!
+2018-04-12 17:08:47 INFO  EventController:46 - 3 shields added to Player1
+2018-04-12 17:08:48 INFO  EventController:46 - 3 shields added to Player2
+2018-04-12 17:08:49 INFO  EventController:46 - 3 shields added to Player4
+2018-04-12 17:09:08 INFO  GameController:159 - Player4's turn
