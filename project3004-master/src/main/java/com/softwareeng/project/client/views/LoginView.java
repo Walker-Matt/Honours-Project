@@ -92,7 +92,9 @@ public class LoginView extends View {
         btnConnect.setId("btnConnect");
         text.setId("text");
         lblIp.setId("ip");
+        txtIp.setId("ipInput");
         lblPort.setId("port");
+        txtPort.setId("portInput");
         bp.setTop(hb);
         bp.setCenter(gridPane);
 

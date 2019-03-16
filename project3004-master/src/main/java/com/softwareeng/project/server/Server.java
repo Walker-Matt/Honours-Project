@@ -15,6 +15,8 @@ public class Server {
     private ArrayList<ClientHandler> playerClientHandlers = new ArrayList<>();
     private ServerSocket listener;
     private int numPlayers = -1;
+    private GameController gameController;
+    private ClientHandler clientHandler;
 
     public Server() throws IOException {
     	log.info("starting server on: localhost at port 9876");
@@ -28,6 +30,11 @@ public class Server {
         listener = new ServerSocket(port, 100, InetAddress.getByName(ip));
         //listener = new ServerSocket(port);
     }
+    
+    //Getters for testing purposes
+    public GameController getGameController() { return gameController; }
+    public ClientHandler getClientHandler() { return clientHandler; }
+    public ArrayList<ClientHandler> getPlayerClientHandlers() { return playerClientHandlers; }
 
     public void removeClientHandler(ClientHandler clientHandler) {
         playerClientHandlers.remove(clientHandler);
@@ -39,7 +46,7 @@ public class Server {
             System.out.println("server started");
             while (true) {
                 System.out.println("Accepting next Client..");
-                ClientHandler clientHandler = new ClientHandler(listener.accept());
+                clientHandler = new ClientHandler(listener.accept());
                 log.info("Client connected!");
                 System.out.println("Wait for socket...");
                 playerClientHandlers.add(clientHandler);
@@ -63,9 +70,9 @@ public class Server {
                 }
             }
 
-            GameController gameController = new GameController(playerClientHandlers);
+            gameController = new GameController(playerClientHandlers);
 
-            gameController.initGame(numPlayers, 3); //CHANGE THIS NUMBER HERE TO RIG (-1 for regular, 1 for scenario 1, 2 for scenario 2)
+            gameController.initGame(numPlayers, 1); //CHANGE THIS NUMBER HERE TO RIG (-1 for regular, 1 for scenario 1, 2 for scenario 2)
 
             gameController.startGame();
         } catch (Exception e) {
@@ -76,5 +83,9 @@ public class Server {
             }
             listener.close();
         }
+    }
+    
+    public void stop() throws Exception {
+    	listener.close();
     }
 }

@@ -746,6 +746,7 @@ public class GameView extends View {
 
     private void initMessage() {
         Label text = new Label("Click on the story deck to get started!");
+        text.setId("message");
         text.setWrapText(true);
 
         messageBox.getChildren().add(text);

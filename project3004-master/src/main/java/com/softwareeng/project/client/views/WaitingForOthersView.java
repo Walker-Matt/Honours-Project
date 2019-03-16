@@ -27,6 +27,7 @@ public class WaitingForOthersView extends View {
         Label lblMsg = new Label("Waiting for other players to join");
         lblMsg.setFont(Font.font("Verdana", FontWeight.BOLD, 24));
         lblMsg.setTextFill(Color.LIGHTGOLDENRODYELLOW);
+        lblMsg.setId("WaitingForOtherPlayers");
         list.add(lblMsg);
     }
 

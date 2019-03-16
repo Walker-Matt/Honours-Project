@@ -44,18 +44,23 @@ public class PlayerSelectionView extends View {
         Label lblMsg = new Label("Choose number of players");
         lblMsg.setFont(Font.font("Verdana", FontWeight.BOLD, 24));
         lblMsg.setTextFill(Color.LIGHTGOLDENRODYELLOW);
+        lblMsg.setId("ChooseNumPlayers");
         list.add(lblMsg);
 
         btn2Player = createBtn("2 players");
+        btn2Player.setId("btn2Player");
         list.add(btn2Player);
 
         btn3Player = createBtn("3 players");
+        btn3Player.setId("btn3Player");
         list.add(btn3Player);
 
         btn4Player = createBtn("4 players");
+        btn4Player.setId("btn4Player");
         list.add(btn4Player);
 
         btnExit = createBtn("EXIT");
+        btnExit.setId("btnExit");
         list.add(btnExit);
 
     }

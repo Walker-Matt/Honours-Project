@@ -31,6 +31,7 @@ public class GameController {
     TournamentController tournamentCon;
     PlayerController playerCon;
 
+    public ArrayList<ClientHandler> getClients() { return this.clients; }
 
     public GameController(ArrayList<ClientHandler> clients) {
         this.clients = clients;
@@ -41,6 +42,8 @@ public class GameController {
         playerCon = new PlayerController(clients);
         handCon = new HandController();
     }
+    
+    public GameModel getGameModel() { return gameModel; }
 
     public void initGame(int numberOfHumanPlayers, int scenario) {
         gameModel.players = initPlayers(numberOfHumanPlayers);
