@@ -3,6 +3,7 @@ package com.softwareeng.project.client.views;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
@@ -200,6 +201,12 @@ public class GameView extends View {
         //set right and left player play area spacing to normal
         rightPlayerPlayArea.setSpacing(-10);
         leftPlayerPlayArea.setSpacing(-10);
+        
+        bottomPlayer.setId("bottomPlayerHand");
+        bottomPlayerPlayArea.setId("bottomPlayerPlayArea");
+        
+        leftPlayer.setId("leftPlayerHand");
+        leftPlayerPlayArea.setId("leftPlayerPlayArea");
     }
 
 
@@ -494,6 +501,7 @@ public class GameView extends View {
      */
     public void addStoryCardAction(EventHandler<MouseEvent> storyClicked) {
         decksArea.addEventHandler(MouseEvent.MOUSE_CLICKED, storyClicked);
+        decksArea.setId("decksArea");
     }
 
     /**
@@ -804,6 +812,7 @@ public class GameView extends View {
         deckAdventure = decksArea.getChildren();
 
         deckStory = decksArea.getChildren();
+        
     }
 
     /**
@@ -820,7 +829,7 @@ public class GameView extends View {
         imv.setFitWidth(CARD_PREF_WIDTH);
         imv.setFitHeight(CARD_MIN_HEIGHT);
         imv.setUserData(cardId);
-        imv.setId(String.valueOf(cardId));
+        imv.setId(String.valueOf(cardId) + path);
         return imv;
     }
 
@@ -849,7 +858,7 @@ public class GameView extends View {
 
         for (Node node : list) {
             if (node instanceof ImageView) {
-                if (node.getId().equals(String.valueOf(cardId))) {
+                if (node.getId().contains(String.valueOf(cardId))) {
                     nodeToRemove = node;
                     break; //doesn't cause problem
                 }
@@ -862,7 +871,7 @@ public class GameView extends View {
         Node nodeToRemove = null;
 
         for (Node node : list) {
-            if (node.getId().equals(String.valueOf(cardId))) {
+            if (node.getId().contains(String.valueOf(cardId))) {
                 if (node.getEffect() == null) {
                     continue;
                 }
@@ -930,6 +939,7 @@ public class GameView extends View {
         button.setMinWidth(BTN_MAX_WIDTH);
         button.setMinHeight(BTN_MAX_HEIGHT);
         button.setOnAction(event);
+        button.setId(buttonText);
 
         if (playerPositions.get(id) == PlayerPosition.LEFT) {
             button.setRotate(90);

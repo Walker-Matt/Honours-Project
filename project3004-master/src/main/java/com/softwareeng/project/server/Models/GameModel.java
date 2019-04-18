@@ -22,6 +22,10 @@ public class GameModel {
         gameEnd = false;
         players = new ArrayList<>(4);
     }
+    
+    public AdventureDeckModel getAdventureDeck() { return this.adventureDeck; }
+    
+    public StoryDeckModel getStoryDeck() { return this.storyDeck; }
 
     public ArrayList<PlayerModel> getPlayers() {
         return players;

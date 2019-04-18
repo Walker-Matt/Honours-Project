@@ -108,6 +108,7 @@ public class QuestController {
         return questResult;
     }
 
+    //modified for testing purposes
     private int setUpSponsor(String cardName, PlayerModel currPlayer, ArrayList<PlayerModel> players, int numStages) {
         stages = new ArrayList<>();
         int sponsorId = -1;
@@ -117,17 +118,17 @@ public class QuestController {
             if (tempPlayer instanceof AIPlayerModel) {
                 AIPlayerModel tempAI = (AIPlayerModel) tempPlayer;
 
-                if (tempAI.doISponsorAQuest(numStages, players, currPlayer)) {
-                    // AI will sponsor
-                    sponsorId = tempAI.playerId;
-
-                    sendMessageToAll(ServerCommand.SET_MESSAGE_BOX, tempAI.playerName + " accepted to sponsor");
-                    log.info(tempAI.playerName + " accepted to sponsor");
-                    break;
-                } else {
-                    sendMessageToAll(ServerCommand.SET_MESSAGE_BOX, tempAI.playerName + " accepted to sponsor");
+//                if (tempAI.doISponsorAQuest(numStages, players, currPlayer)) {
+//                    // AI will sponsor
+//                    sponsorId = tempAI.playerId;
+//
+//                    sendMessageToAll(ServerCommand.SET_MESSAGE_BOX, tempAI.playerName + " accepted to sponsor");
+//                    log.info(tempAI.playerName + " accepted to sponsor");
+//                    break;
+//                } else {
+                    sendMessageToAll(ServerCommand.SET_MESSAGE_BOX, tempAI.playerName + " declined to sponsor");
                     log.info(tempAI.playerName + " declined to sponsor");
-                }
+//                }
 
                 sleep(2);
             } else {

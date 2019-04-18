@@ -45,7 +45,7 @@ public class TestFXBase extends ApplicationTest {
     }
 
     /* Helper method to retrieve Java FX GUI Components */
-    public <T extends Node> T find (final  String query){
+    public <T extends Node> T find (final String query){
         return (T) lookup(query).queryAll().iterator().next();
     }
 }

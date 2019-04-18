@@ -30,8 +30,13 @@ public class GameController {
     EventController eventCon;
     TournamentController tournamentCon;
     PlayerController playerCon;
+    CardModel currentCard;
+    
+    public CardModel getCurrentCard() { return this.currentCard; }
 
     public ArrayList<ClientHandler> getClients() { return this.clients; }
+    
+    public GameModel getGameModel() { return this.gameModel; }
 
     public GameController(ArrayList<ClientHandler> clients) {
         this.clients = clients;
@@ -42,8 +47,6 @@ public class GameController {
         playerCon = new PlayerController(clients);
         handCon = new HandController();
     }
-    
-    public GameModel getGameModel() { return gameModel; }
 
     public void initGame(int numberOfHumanPlayers, int scenario) {
         gameModel.players = initPlayers(numberOfHumanPlayers);
@@ -177,7 +180,7 @@ public class GameController {
 
 
             if (storyDeckClicked) {
-                CardModel currentCard = deckCon.drawFromDeck(gameModel.storyDeck);
+                currentCard = deckCon.drawFromDeck(gameModel.storyDeck);
 
                 sendMessageToAll(ServerCommand.FLIP_STORY_CARD, currentCard.cardId + " " + currentCard.imageUrl);
 
@@ -373,30 +376,39 @@ public class GameController {
         return players;
     }
 
+    //modified for testing purposes
     private void initPlayersScenario1() {
         PlayerModel p1 = gameModel.players.get(0);
 
-        p1.hand.playerHand = handCon.generateHand(8, gameModel.adventureDeck);
-        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Saxons"));
-        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Boar"));
+        p1.hand.playerHand = handCon.generateHand(0, gameModel.adventureDeck);
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Battle-ax"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Lance"));
         p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Sword"));
-        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Dagger"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Lance"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Excalibur"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Battle-ax"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Lance"));
+        p1.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Excalibur"));
 
         PlayerModel p2 = gameModel.players.get(1);
 
-        p2.hand.playerHand = handCon.generateHand(12, gameModel.adventureDeck);
+        p2.hand.playerHand = handCon.generateHand(0, gameModel.adventureDeck);
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Saxons"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Boar"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Thieves"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Saxon Knight"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Evil Knight"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Saxons"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Robber Knight"));
+        p2.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Black Knight"));
 
         PlayerModel p3 = gameModel.players.get(2);
 
-        p3.hand.playerHand = handCon.generateHand(10, gameModel.adventureDeck);
-        p3.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Horse"));
-        p3.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Excalibur"));
+        p3.hand.playerHand = handCon.generateHand(0, gameModel.adventureDeck);
 
         PlayerModel p4 = gameModel.players.get(3);
 
-        p4.hand.playerHand = handCon.generateHand(10, gameModel.adventureDeck);
-        p4.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Battle-ax"));
-        p4.hand.playerHand.add(deckCon.drawSpecificCardFromDeck(gameModel.adventureDeck, "Lance"));
+        p4.hand.playerHand = handCon.generateHand(0, gameModel.adventureDeck);
     }
 
     private void initPlayersScenario2() {
@@ -740,17 +752,14 @@ public class GameController {
         deckCon.shuffle(gameModel.adventureDeck); //shuffle the cards
     }
 
+    //modified for testing purposes
     private void initDeckScenario1() {
         //Quest Cards
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Journey through the Enchanted Forest", 3, "Evil Knight"), 1);
         deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Vanquish King Arthur's Enemies", 3), 2);
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Test of the Green Knight", 4, "Green Knight"), 1);
         deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Repel the Saxon Raiders", 2, "All Saxons"), 2);
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Search for the Questing Beast", 4), 1);
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Defend the Queen's Honor", 4, "All"), 1);
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Slay the Dragon", 3, "Dragon"), 1);
         deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Rescue the Fair Maiden", 3, "Black Knight"), 1);
         deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Search for the Holy Grail", 5, "All"), 1);
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Test of the Green Knight", 4, "Green Knight"), 1);
         //Tournament Cards
         deckCon.addCard(gameModel.storyDeck, new TournamentCardModel("At Camelot", 3), 1);
         deckCon.addCard(gameModel.storyDeck, new TournamentCardModel("At Orkney", 2), 1);
@@ -759,17 +768,19 @@ public class GameController {
         //Event Cards
         deckCon.addCard(gameModel.storyDeck, new EventCardModel("Pox"), 1);
         deckCon.addCard(gameModel.storyDeck, new EventCardModel("Plague"), 1);
-        deckCon.addCard(gameModel.storyDeck, new EventCardModel("King's Recognition"), 2);
         deckCon.addCard(gameModel.storyDeck, new EventCardModel("Queen's Favor"), 2);
-        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Court Called to Camelot"), 2);
         deckCon.addCard(gameModel.storyDeck, new EventCardModel("King's Call to Arms"), 1);
-
+        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Prosperity Throughout the Realm"), 1);
+        deckCon.addCard(gameModel.storyDeck, new EventCardModel("King's Recognition"), 2);
+        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Court Called to Camelot"), 2);
 
         //RIGGING
-        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Chivalrous Deed"), 1);//CHIVALROUS DEED THIRD CARD
-        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Prosperity Throughout the Realm"), 1); //PROSPERITY SECOND CARD
-        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Boar Hunt", 2, "Boar"), 1); //BOAR HUNT FIRST CARD
-
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Defend the Queen's Honor", 4, "All"), 1); //THIRD QUEST
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Journey through the Enchanted Forest", 3, "Evil Knight"), 1); //SECOND QUEST
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Slay the Dragon", 3, "Dragon"), 1);
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Search for the Questing Beast", 4), 1);
+        deckCon.addCard(gameModel.storyDeck, new QuestCardModel("Boar Hunt", 2, "Boar"), 1); //FIRST QUEST
+        deckCon.addCard(gameModel.storyDeck, new EventCardModel("Chivalrous Deed"), 1);
 
         //Weapon Cards
         deckCon.addCard(gameModel.adventureDeck, new BattleCardModel("Horse", 10), 11);
