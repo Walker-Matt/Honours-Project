@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         strict = true,
-        features = {"C:/Users/Thinkpad/Documents/GitHub/Honours-Project/project3004-master/src/test/resources/features/Server_scenarios.feature"},
-        plugin = {"json:C:/Users/Thinkpad/Documents/GitHub/Honours-Project/project3004-master/target/cucumber-parallel/1.json"},
+        features = {"C:/Users/Thinkpad/Documents/GitHub/Honours-Project/Honours-Project/src/test/resources/features/Client_one_scenarios.feature"},
+        plugin = {"json:C:/Users/Thinkpad/Documents/GitHub/Honours-Project/Honours-Project/target/cucumber-parallel/1.json"},
         monochrome = false,
         tags = {},
         glue = {"stepDefs"})
